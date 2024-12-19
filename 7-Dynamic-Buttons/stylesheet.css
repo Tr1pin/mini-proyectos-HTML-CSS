@@ -1,0 +1,112 @@
+body {
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+nav img {
+    width: 25px;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 18px;
+    border: 0px solid grey;
+    border-radius: 40px;
+    box-shadow: 1px 1px 5px 1px grey;
+    transition: width 0.9s ease;
+    interpolate-size:allow-keywords;
+}
+
+nav a p {
+    opacity: 0;
+    position: absolute;
+    color: #ffff;
+    transition: all 0.5s step-end; /* Transición aplicada para el texto */
+}
+
+nav a img {
+    transition: all 0.3s ease; /* Transición aplicada para los íconos */
+}
+
+
+
+.container-home:hover {
+    width: 130px;
+    background: linear-gradient(to right, #7b2cbf, #d55aeb);
+    color: #ffff;
+}
+
+.container-message:hover {
+    width: 130px;
+    background: linear-gradient(to right, #34b4df, #5252e7);
+    color: #ffff;
+}
+
+.container-fav:hover{
+    width: 130px;
+    background: linear-gradient(to right, #be885b, #e27822);
+    color: #ffff;
+}
+
+.container-video:hover{
+    width: 130px;
+    background: linear-gradient(to right,  #2cca7b, #50badd);
+    color: #ffff;
+}
+
+.container-photo:hover {
+    width: 130px;
+    background: linear-gradient(to right, #ce8bdb, #d55aeb);
+    color: #ffff;
+}
+
+
+.container-home:hover .icon-home,
+.container-message:hover .icon-message ,
+.container-fav:hover .icon-fav,
+.container-video:hover .icon-video,
+.container-photo:hover .icon-photo {
+    opacity: 0;
+}
+
+.container-home:hover p ,
+.container-message:hover p,
+.container-fav:hover p,
+.container-video:hover p,
+.container-photo:hover p{
+    opacity: 1;
+    font-family: system-ui, -apple-system;
+    font-size: 20px;
+    margin: 0;
+}
+
+
+@media  (width <= 700px) {
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    nav img{
+        width: 25px;
+    }
+    nav a{
+        width: 25px;
+    }
+}

@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    background-color:darkblue;
+}
+
+.pagoRealizado{
+    display: flex;
+    width: 550px;
+    height: 150px;
+    padding: 20px;
+    background-color: #ffff;
+    border: 1px solid #ffff;
+    border-radius: 15px;
+}
+
+
+.conteiner-text{
+    display: flex;
+    flex: 1;
+    gap: 15px;
+
+}
+
+.conteiner-text div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div h3,h4{
+    margin: 0;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+.conteiner-buttons{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.conteiner-buttons .descargar,.volver{
+    width: 120px;
+    height: 50px;
+    font-weight: bold;
+}
+
+.conteiner-buttons .descargar{
+    background-color: rgb(30, 144, 255);
+    color: #ffff;
+    border: 1px solid rgb(30, 144, 255);
+    border-radius: 7px;
+}
+
+.conteiner-buttons .volver{
+    background-color: #ffff;
+    color: #000;
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 7px;
+}
+
+
+@media (width <= 560px) {
+
+    .pagoRealizado{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 210px;
+        
+    }
+
+    .conteiner-buttons{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .conteiner-buttons .descargar,.volver{
+        width: 90%;
+    }
+
+}

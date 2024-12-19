@@ -1,0 +1,190 @@
+body{
+    width: 100%;
+    height: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5%;
+    overflow: hidden;
+  
+  }
+  
+  main{
+    background-color: rgb(69, 68, 68);
+    border-radius: 15px;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .nombrefondo{
+    position: absolute;
+    margin-right: 10px;
+    font-size: 250px;
+    font-style: italic;
+    color: grey;
+    opacity: 0.1;
+    
+  
+  }
+  .cabecera{
+    width: 200px;
+    height: 250px;
+    
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+  .cabecera img{
+    
+    width: 280px;
+    height: 200px;
+    z-index: 10;
+    
+  }
+  .circulo{
+    background-color: rgba(0, 255, 255, 0.928);
+    border-radius: 200px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    margin-left: 190px;
+    margin-bottom: 80px;
+    overflow: hidden;
+  }
+  
+  
+  .cuerpo{
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+  }
+  .cuerpo h2{
+    opacity: 0;
+  }
+  
+  .sizeColor{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    margin-top: 300px;
+    transition: opacity 0.3s ease-in-out 0.5s;
+  
+  }
+  .sizeColor p{
+    color: white;
+  }
+  .size{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: black;
+    
+    
+  }
+  .size div{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .size div:hover{
+    background-color: orange;
+    cursor: pointer;
+  }
+  
+  .colores{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    color: black;
+  }
+  
+  .colores div{
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    text-align: center;
+  }
+  .colores div:hover{
+    border: 1px solid black;
+    border-radius: 25px;
+
+  }
+  
+
+  .verde{
+    background-color: greenyellow;
+  }
+  .azul{
+    background-color: aqua;
+  }
+  .rojo{
+    background-color: red;
+  }
+  
+  .botonCompra p{
+    width: 150px;
+    height: 30px;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+  }
+  
+
+  main:hover .cabecera img {
+    transform: translateY(-20px); /* Moves the image 20px up */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+main:hover .circulo {
+    width: 500px; /* Makes the circle wider */
+    height: 500px;
+    border-radius: 250px;
+    transition: width 0.5s ease-in-out, height 0.7s ease-in-out; /* Smooth transition */
+}
+
+main:hover .sizeColor {
+   
+    
+    opacity: 1; /* Makes the sizeColor section fully visible */
+    margin-top: 0px;
+    transform: translateY(-50px);
+    transition: opacity 0.3s ease-in-out 1s, transform 1s ease-in-out;
+    
+}
+ 
+
+main:hover h2 {
+  transform: translateY(-40px);
+  transition: transform 0.5s ease-in-out;
+  opacity: 1;
+}
+  

@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;       /* Hace que tanto html como body ocupen el 100% de la altura de la ventana */
+    margin: 0;          /* Elimina los márgenes */
+    padding: 0;
+    background-color: #74F0D1;         /* Elimina los rellenos */
+    overflow: hidden;   /* Evita cualquier tipo de scroll */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.containerImg {
+    width: 150px;
+}
+
+.containerImg img{
+    width: 100%;
+    
+}
+
+.text{
+    visibility: hidden;
+    width: 150px;
+    height: 60px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -120px;
+    
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.containerImg:hover{
+    transform: translateY(-10px);
+    transition: ease 0.7s;
+}
+
+.containerImg:hover .text{
+    visibility: visible;
+    
+}

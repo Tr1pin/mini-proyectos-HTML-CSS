@@ -1,0 +1,71 @@
+body{
+    display: flex;  
+    justify-content: center;
+}
+.barra-buscador{
+    display: flex;
+    flex: 1;
+    height: 35px;
+    margin-top: 80px;
+    padding: 5px;
+    border: 0.3px solid grey;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 0px rgba(128,128,128);
+
+}
+
+.barra-buscador .input{
+    width: 95%;
+    padding-left: 5px;
+    background-color: transparent;
+    border: none;
+    caret-color: black;
+    outline: none;
+    font-size: 18px;
+}
+
+.botones{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.boton-buscar{
+    width: 40px;
+    background-color: white; 
+    border: none;
+    color: black;
+    caret-color: black;
+    outline: none;
+}
+
+.boton-audio{
+    background-color: white;
+    border: none;
+    color: black;
+    caret-color: black;
+    outline: none;
+}
+
+.boton-buscar svg{
+    width: 20px;
+    height: 20px;
+}
+.boton-audio svg{
+    width: 20px;
+    height: 20px;
+}
+
+.boton-buscar svg:hover{
+    cursor: pointer;
+    fill: dodgerblue;
+}
+
+.boton-audio svg:hover{
+    cursor: pointer;
+    fill:  dodgerblue ;
+}
